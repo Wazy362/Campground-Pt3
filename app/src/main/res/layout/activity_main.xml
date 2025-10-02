@@ -8,16 +8,14 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <!-- RecyclerView to display parks -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/parks"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+    <FrameLayout
+        android:id="@+id/main_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:listitem="@layout/item_park" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
